@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/product.php';
+    require_once __DIR__ . '/user.php';
 
     $product1 = new product(
         'Anny-X',
@@ -8,7 +9,6 @@
         'La giacca softshell per le passeggiate con i nostri cani.',
         13
     );
-
     $product2 = new product(
         'DogPerformance',
         'Adult 25/16',
@@ -16,7 +16,6 @@
         'Per il mantenimento del peso in inverno, ideale per cani non sottoposti ad un attività fisica intensa.',
         13
     );
-
     $product3 = new product(
         'Beaphar',
         'Lozione per occhi',
@@ -24,8 +23,33 @@
         'La lozione occhi Beaphar contribuisce alla regolare pulizia degli occhi di cani e gatti.',
         43
     );
+    var_dump($product1, $product2, $product3);
 
-    var_dump($product1, $product2, $product3)
+    $user1 = new user(
+        'Lewis',
+        'Hamilton',
+        'LewisTheFastest',
+        '07/01/1985',
+        'London',
+        'United Kingdom - UK'
+    );
+    $user2 = new user(
+        'Cristiando',
+        'Ronaldo',
+        'CristianoTheShooter',
+        '05/02/1985',
+        'Madeira',
+        'Portugal - PO'
+    );
+    $user3 = new user(
+        'Rafael',
+        'Nadal',
+        'RafaTheGoat',
+        '03/06/1986',
+        'Barcelona',
+        'Spain - SP'
+    );
+    var_dump($user1, $user2, $user3);
 ?>
 <!--
 Immaginare quali sono le classi necessarie per creare uno shop online con le seguenti caratteristiche:

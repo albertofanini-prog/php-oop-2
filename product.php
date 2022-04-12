@@ -10,7 +10,7 @@
             $this->brand = $brand;
             $this->name = $name;
             $this->price = $price;
-            $this->description = $name;
+            $this->description = $description;
             $this->quantity = $quantity;
         }
 
