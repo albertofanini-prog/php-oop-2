@@ -10,7 +10,7 @@
     );
 
     $product2 = new product(
-        'Anny-X',
+        'DogPerformance',
         'Adult 25/16',
         41.00,
         'Per il mantenimento del peso in inverno, ideale per cani non sottoposti ad un attività fisica intensa.',
@@ -18,7 +18,7 @@
     );
 
     $product3 = new product(
-        'DogPerformance',
+        'Beaphar',
         'Lozione per occhi',
         11.20,
         'La lozione occhi Beaphar contribuisce alla regolare pulizia degli occhi di cani e gatti.',
