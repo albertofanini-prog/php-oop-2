@@ -1,3 +1,6 @@
+<?php
+    require_once __DIR__ . '/.php';
+?>
 <!--
 Immaginare quali sono le classi necessarie per creare uno shop online con le seguenti caratteristiche:
     L’e-commerce vende prodotti per gli animali. 
