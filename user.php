@@ -5,20 +5,20 @@
         protected $username;
         protected $birthDate;
         protected $address;
-        protected $emai;
-        protected $telephonNumber;
+        protected $email;
+        protected $telephoneNumber;
         protected $country;
         public $sale = 0;
 
         // Confermare che tutti i dati siano inseriti
-        public function __construct($name, $surname, $username, $birthDate, $address, $email, $telephonNumber, $country){
+        public function __construct($name, $surname, $username, $birthDate, $address, $email, $telephoneNumber, $country){
             $this->name = $name;
             $this->surname = $surname;
             $this->username = $username;
             $this->birthDate = $birthDate;
             $this->address = $address;
             $this->email = $email;
-            $this->telephoneNumber;
+            $this->telephoneNumber = $telephoneNumber;
             $this->country = $country;
         }
 
@@ -38,6 +38,16 @@
             }
         }
 
+        //Effettuare controllo su indirizzio
+            //Almeno due parole (Via Roma)
+            //Almeno un numero (civico)
+        public function getUserAddress($address){
+            if (str_word_count($address) = 2 && preg_match('~[0-9]~', $address) = true){
+                $this->address = $address;
+                return $true;
+            }
+        }
+
         //Effettuare controllo su email
             //Deve includere tutti i campi per confermare una mail
         public function getUserEmail($email){
@@ -51,9 +61,9 @@
             //Da 6 a 12 numeri
             //[]quali numeri includere
             //{}quanti numere includere
-        public function getPhoneNumber($telephonNumber){
-            if (preg_match('~[0-9]{6-12}~', $telephonNumber) = true){
-                $this->$telephonNumber = $telephonNumber;
+        public function getPhoneNumber($telephoneNumber){
+            if (preg_match('~[0-9]{6-12}~', $telephoneNumber) = true){
+                $this->$telephoneNumber = $telephoneNumber;
                 return true;
             }
         }
