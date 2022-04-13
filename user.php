@@ -20,7 +20,7 @@
             $this->email = $email;
             $this->telephoneNumber;
             $this->country = $country;
-        };
+        }
 
         //Effettuare controllo su nome, cognome e username
             //Non numerici
@@ -36,7 +36,7 @@
                 $this->username = $username;
                 return true;
             }
-        };
+        }
 
         //Effettuare controllo su email
             //Deve includere tutti i campi per confermare una mail
@@ -45,15 +45,26 @@
                 $this->$email = $email;
                 return true;
             }
-        };
+        }
+
+        //Effettuare controllo sul numero di telefono
+            //Da 6 a 12 numeri
+            //[]quali numeri includere
+            //{}quanti numere includere
+        public function getPhoneNumber($telephonNumber){
+            if (preg_match('~[0-9]{6-12}~', $telephonNumber) = true){
+                $this->$telephonNumber = $telephonNumber;
+                return true;
+            }
+        }
 
         //Effettuare controllo su country
             //Due lettere. ES: IT-UK-US
         public function getCountry($country){
-            if(str_word_count($country) = 2){
+            if (str_word_count($country) = 2){
                 $this->$country = $country;
                 return true;
             }
-        };
+        }
     }
 ?>
