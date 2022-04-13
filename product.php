@@ -24,5 +24,15 @@
             }
             )
         }
+
+        //Controllo sul prezzo
+        public function getPrice($price){
+            if (is_numeri($price) && $prezzo > 0){
+                $this->price = $price;
+                return true;
+            } else{
+                return false;
+            }
+        }
     }
 ?>
