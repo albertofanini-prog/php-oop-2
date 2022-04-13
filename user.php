@@ -20,7 +20,7 @@
             $this->email = $email;
             $this->telephoneNumber;
             $this->country = $country;
-        }
+        };
 
         //Effettuare controllo su nome, cognome e username
             //Non numerici
@@ -29,14 +29,14 @@
             if(
                 strlen($nome) >= 3 && !is_numeric($name)
                 && strlen($surname) >= 3 && !is_numeric($surname)
-                && strlen($username)
+                && strlen($username) >= 3
             ){
                 $this->name = $name;
                 $this->surname = $surname;
                 $this->username = $username;
                 return true;
             }
-        }
+        };
 
         //Effettuare controllo su email
             //Deve includere tutti i campi per confermare una mail
@@ -45,6 +45,15 @@
                 $this->$email = $email;
                 return true;
             }
-        }
+        };
+
+        //Effettuare controllo su country
+            //Due lettere. ES: IT-UK-US
+        public function getCountry($country){
+            if(str_word_count($country) = 2){
+                $this->$country = $country;
+                return true;
+            }
+        };
     }
 ?>
