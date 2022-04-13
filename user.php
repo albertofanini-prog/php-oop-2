@@ -37,5 +37,14 @@
                 return true;
             }
         }
+
+        //Effettuare controllo su email
+            //Deve includere tutti i campi per confermare una mail
+        public function getUserEmail($email){
+            if (filter_var($email, FILTER_VALIDATE_MAIL)){
+                $this->$email = $email;
+                return true;
+            }
+        }
     }
 ?>
