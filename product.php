@@ -14,8 +14,15 @@
             $this->quantity = $quantity;
         }
 
-        // public function getInfo(){
-        //     return $this->type.''.'name'.''.$this->name;
-        // }
+        //Controllo su nome prodotto
+        public function getName($name){
+            if(strlen($name) >= 4 && !isnumeric($name){
+                $this->name = $name;
+                return true;
+            } else{
+                return false;
+            }
+            )
+        }
     }
 ?>

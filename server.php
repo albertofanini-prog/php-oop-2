@@ -23,82 +23,38 @@
         'La lozione occhi Beaphar contribuisce alla regolare pulizia degli occhi di cani e gatti.',
         43
     );
-    // $products = [
-    //     new product(
-    //         'Anny-X',
-    //         'Giacca in softshell',
-    //         129.90,
-    //         'La giacca softshell per le passeggiate con i nostri cani.',
-    //         13
-    //     ),
-    //     new product(
-    //         'DogPerformance',
-    //         'Adult 25/16',
-    //         41.00,
-    //         'Per il mantenimento del peso in inverno, ideale per cani non sottoposti ad un attività fisica intensa.',
-    //         13
-    //     ),
-    //     new product(
-    //         'Beaphar',
-    //         'Lozione per occhi',
-    //         11.20,
-    //         'La lozione occhi Beaphar contribuisce alla regolare pulizia degli occhi di cani e gatti.',
-    //         43
-    //     ),
-    // ];
-    // var_dump($product1, $product2, $product3);
+    $products = [
+        new product(
+            'Anny-X',
+            'Giacca in softshell',
+            129.90,
+            'La giacca softshell per le passeggiate con i nostri cani.',
+            13
+        ),
+        new product(
+            'DogPerformance',
+            'Adult 25/16',
+            41.00,
+            'Per il mantenimento del peso in inverno, ideale per cani non sottoposti ad un attività fisica intensa.',
+            13
+        ),
+        new product(
+            'Beaphar',
+            'Lozione per occhi',
+            11.20,
+            'La lozione occhi Beaphar contribuisce alla regolare pulizia degli occhi di cani e gatti.',
+            43
+        ),
+    ];
+    var_dump($product1, $product2, $product3);
 
-    $user1 = new user(
-        'Lewis',
-        'Hamilton',
-        'LewisTheFastest',
-        '07/01/1985',
-        'London',
-        'United Kingdom - UK'
-    );
-    $user2 = new user(
-        'Cristiando',
-        'Ronaldo',
-        'CristianoTheShooter',
-        '05/02/1985',
-        'Madeira',
-        'Portugal - PO'
-    );
-    $user3 = new user(
-        'Rafael',
-        'Nadal',
-        'RafaTheGoat',
-        '03/06/1986',
-        'Barcelona',
-        'Spain - SP'
-    );
-    // $users = [
-    //     new user(
-    //         'Lewis',
-    //         'Hamilton',
-    //         'LewisTheFastest',
-    //         '07/01/1985',
-    //         'London',
-    //         'United Kingdom - UK'
-    //     ),
-    //     new user(
-    //         'Cristiando',
-    //         'Ronaldo',
-    //         'CristianoTheShooter',
-    //         '05/02/1985',
-    //         'Madeira',
-    //         'Portugal - PO'
-    //     ),
-    //     new user(
-    //         'Rafael',
-    //         'Nadal',
-    //         'RafaTheGoat',
-    //         '03/06/1986',
-    //         'Barcelona',
-    //         'Spain - SP'
-    //     ),
-    // ];
-    // var_dump($user1, $user2, $user3);
+    
+    var_dump($user1, $user2, $user3);
+
+
+    //Controllo dati user
+
+    //Controllo address user
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -185,27 +141,6 @@
     </style>
 </head>
 <body>
-    <main>
-        <!-- <div class="products">
-            <ul>
-                <?php foreach ($products as $product){
-                ?>
-                <li class="product">
-                    <h1><?php echo $product->brand; ?></h1>
-                    <h4><?php echo $product->name; ?></h4>
-                    <h2>€<?php echo $product->price; ?></h2>
-                    <h4><?php echo $product->description; ?></h4>
-                    <h4>Quantità disponibili: <?php echo $product->quantity; ?></h4>
-                <?php
-                }
-                ?>
-                </li>
-            </ul>
-        </div>
-        <div class="users">
-
-        </div> -->
-    </main>
 </body>
 </html>
 <!--

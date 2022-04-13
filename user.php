@@ -42,7 +42,7 @@
             //Almeno due parole (Via Roma)
             //Almeno un numero (civico)
         public function getUserAddress($address){
-            if (str_word_count($address) = 2 && preg_match('~[0-9]~', $address) = true){
+            if (str_word_count($address) >= 2 && preg_match('~[0-9]~', $address) = true){
                 $this->address = $address;
                 return $true;
             }
